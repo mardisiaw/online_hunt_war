@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Online Hunt War",
+  "description": "Run at specific time, then click until the button active or refresh when button inactive",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://coldplayinjakarta.com/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://coldplayinjakarta.com/"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

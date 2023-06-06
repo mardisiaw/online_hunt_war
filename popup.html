@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Hunt War</title>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>Set Target Time</h1>
+  <label for="hours">Hours:</label>
+  <input type="number" id="hours" min="0" max="23" required>
+  <label for="minutes">Minutes:</label>
+  <input type="number" id="minutes" min="0" max="59" required>
+  <label for="seconds">Seconds:</label>
+  <input type="number" id="seconds" min="0" max="59" required>
+  <label for="milliseconds">Milliseconds:</label>
+  <input type="number" id="milliseconds" min="0" max="999" required>
+  <button id="setTimeButton">Set Time</button>
+
+  <p>Target Time: <span id="targetTime"></span></p>
+</body>
+</html>
